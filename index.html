@@ -6,7 +6,107 @@
     <title>Document</title>
 </head>
 <body>
-<div style="width:70%;margin:40px auto 0 auto;" class="title01" id="title01"><h1>ZUL的筆記本</div>
+
+<div style="width:70%;margin:40px auto 0 auto;" class="title01" id="title01"><h1>ZUL的筆記本</h1></div>
+
+<!-- 彈跳窗觸發按鈕 -->
+<div style="text-align:center;margin:30px 0;">
+  <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">彈跳窗1</button>
+  <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">彈跳窗2</button>
+  <button type="button" class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">彈跳窗3</button>
+</div>
+
+<!-- 彈跳窗1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">彈跳窗1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+  這是第一個彈跳窗內容。<br>
+  <button type="button" class="btn btn-info mx-2 mt-2" data-bs-toggle="modal" data-bs-target="#nestedModal1">巢狀彈跳窗A</button>
+  <button type="button" class="btn btn-dark mx-2 mt-2" data-bs-toggle="modal" data-bs-target="#nestedModal2">巢狀彈跳窗B</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 巢狀彈跳窗A -->
+<div class="modal fade" id="nestedModal1" tabindex="-1" aria-labelledby="nestedModalLabel1" aria-hidden="true" data-bs-backdrop="false" data-bs-focus="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nestedModalLabel1">巢狀彈跳窗A</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        這是巢狀彈跳窗A的內容。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 巢狀彈跳窗B -->
+<div class="modal fade" id="nestedModal2" tabindex="-1" aria-labelledby="nestedModalLabel2" aria-hidden="true" data-bs-backdrop="false" data-bs-focus="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nestedModalLabel2">巢狀彈跳窗B</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        這是巢狀彈跳窗B的內容。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 彈跳窗2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">彈跳窗2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        這是第二個彈跳窗內容。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 彈跳窗3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel3">彈跳窗3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        這是第三個彈跳窗內容。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
