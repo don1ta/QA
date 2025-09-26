@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZUL 的筆記本 </title>
+  <title>ZUL 的筆記本 — Windows 風格設定面板</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root{ --panel-bg:#fff; --panel-border:#d0d7de; --panel-soft:#f3f4f6; }
@@ -38,6 +38,9 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="tab-search" data-bs-toggle="tab" data-bs-target="#tabpane-search" type="button" role="tab">其他文件</button>
       </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-quotes" data-bs-toggle="tab" data-bs-target="#tabpane-quotes" type="button" role="tab">報價比較</button>
+      </li>
     </ul>
 
     <div class="win-body tab-content">
@@ -45,24 +48,22 @@
       <div class="tab-pane fade show active" id="tabpane-general" role="tabpanel" aria-labelledby="tab-general">
         <div class="group-stack mb-4">
 
-          根據不同保險公司對應方式
+          <!-- 組 1 -->
           <div class="group-box">
             <div class="group-title">小客車保險相關</div>
             <div class="form-check mb-2">
               <input class="form-check-input" type="radio" name="clickMode1" id="singleClick1">
-              <label class="form-check-label" for="singleClick1">華南保險</label>
+              <label class="form-check-label" for="singleClick1">按一下開啟項目（指向項目以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="singleHint1" style="display:none">
-              <div class="form-hint">今天的天氣很好，故事就是這樣開始的，有一天........直到篩滿文字為止。</div>
+              <div class="form-hint">選擇此模式時，滑鼠指到就選取，點一下就開啟。</div>
             </div>
             <div class="form-check mt-3">
-              <input class="form-check-input" type="radio" name="clickMode1" id="doubleClick1">
-              <label class="form-check-label" for="doubleClick1">新光保險</label>
-             
-
+              <input class="form-check-input" type="radio" name="clickMode1" id="doubleClick1" checked>
+              <label class="form-check-label" for="doubleClick1">按兩下以開啟項目（按一下以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="doubleHint1" style="display:none">
-              <div class="form-hint">今天的天氣很好，故事就是這樣開始的，有一天........直到篩滿文字為止。</div>
+              <div class="form-hint">選擇此模式時，必須按兩下才會開啟，單擊僅做選取。</div>
             </div>
           </div>
 
@@ -71,17 +72,17 @@
             <div class="group-title">大客車保險相關</div>
             <div class="form-check mb-2">
               <input class="form-check-input" type="radio" name="clickMode2" id="singleClick2">
-              <label class="form-check-label" for="singleClick2">華南保險</label>
+              <label class="form-check-label" for="singleClick2">按一下開啟項目（指向項目以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="singleHint2" style="display:none">
-              <div class="form-hint">今天的天氣很好，故事就是這樣開始的，有一天........直到篩滿文字為止。</div>
+              <div class="form-hint">選擇此模式時，滑鼠指到就選取，點一下就開啟。</div>
             </div>
             <div class="form-check mt-3">
-              <input class="form-check-input" type="radio" name="clickMode2" id="doubleClick2" >
-              <label class="form-check-label" for="doubleClick2">新光保險</label>
+              <input class="form-check-input" type="radio" name="clickMode2" id="doubleClick2" checked>
+              <label class="form-check-label" for="doubleClick2">按兩下以開啟項目（按一下以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="doubleHint2" style="display:none">
-              <div class="form-hint">今天的天氣很好，故事就是這樣開始的，有一天........直到篩滿文字為止。</div>
+              <div class="form-hint">選擇此模式時，必須按兩下才會開啟，單擊僅做選取。</div>
             </div>
           </div>
 
@@ -90,7 +91,7 @@
             <div class="group-title">租賃車保險相關</div>
             <div class="form-check mb-2">
               <input class="form-check-input" type="radio" name="clickMode3" id="singleClick3">
-              <label class="form-check-label" for="singleClick3">華南保險</label>
+              <label class="form-check-label" for="singleClick3">按一下開啟項目（指向項目以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="singleHint3" style="display:none">
               <div class="form-check">
@@ -103,11 +104,11 @@
               </div>
             </div>
             <div class="form-check mt-3">
-              <input class="form-check-input" type="radio" name="clickMode3" id="doubleClick3" >
-              <label class="form-check-label" for="doubleClick3">新光保險</label>
+              <input class="form-check-input" type="radio" name="clickMode3" id="doubleClick3" checked>
+              <label class="form-check-label" for="doubleClick3">按兩下以開啟項目（按一下以選取）</label>
             </div>
             <div class="ms-4 mb-2" id="doubleHint3" style="display:none">
-              <div class="form-hint">今天的天氣很好，故事就是這樣開始的，有一天........直到篩滿文字為止。</div>
+              <div class="form-hint">選擇此模式時，必須按兩下才會開啟，單擊僅做選取。</div>
             </div>
           </div>
 
@@ -179,6 +180,76 @@
           <p class="mb-2">「其他文件」分頁內容（可放更多範例）。</p>
         </div>
       </div>
+    </div>
+
+      <!-- 報價比較（新分類） -->
+      <div class="tab-pane fade" id="tabpane-quotes" role="tabpanel" aria-labelledby="tab-quotes">
+        <div class="group-box">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h6 class="mb-0">各家報價內容比較</h6>
+            <small class="text-muted">單位：新台幣（NT$）/ 年</small>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered align-middle mb-0">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">保險公司</th>
+                  <th scope="col">車體險</th>
+                  <th scope="col">第三人責任（人）</th>
+                  <th scope="col">第三人責任（財）</th>
+                  <th scope="col">超額責任</th>
+                  <th scope="col">自負額</th>
+                  <th scope="col">道路救援</th>
+                  <th scope="col">保費小計</th>
+                  <th scope="col">備註 / 連結</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">華南</th>
+                  <td>350,000</td>
+                  <td>3,000,000</td>
+                  <td>1,000,000</td>
+                  <td>10,000,000</td>
+                  <td>10%</td>
+                  <td>含（50km）</td>
+                  <td>18,200</td>
+                  <td><a href="#" class="link-primary">方案明細</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">新光</th>
+                  <td>350,000</td>
+                  <td>4,000,000</td>
+                  <td>1,200,000</td>
+                  <td>20,000,000</td>
+                  <td>5%</td>
+                  <td>含（80km）</td>
+                  <td>19,750</td>
+                  <td><a href="#" class="link-primary">方案明細</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">國泰</th>
+                  <td>350,000</td>
+                  <td>3,000,000</td>
+                  <td>1,500,000</td>
+                  <td>15,000,000</td>
+                  <td>10%（下限3,000）</td>
+                  <td>含（不限次數）</td>
+                  <td>20,300</td>
+                  <td><a href="#" class="link-primary">方案明細</a></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="table-light">
+                  <th>建議</th>
+                  <td colspan="8">依客戶用車習慣調整「超額責任」與「自負額」；若長途常態，優先選擇救援里程較高方案。</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="footer"></div>
